@@ -31,6 +31,7 @@ while (true)
                 pole[1, 3 - 1] = mina;
                 pole[2, 4 - 1] = mina;  // вывел мины
                 pole[3, 4 - 3] = mina;
+                pole[i, j] = '@';
             }
         }
     }
@@ -56,20 +57,23 @@ while (true)
     {
         for (int j = 0; j < 5; j++)
         {
-            if ()
+            if (i1 == i && j1 == j )
+            {
                 minaN = true;
                 pole[1, 3 - 1] = mina;
                 pole[2, 4 - 1] = mina;  // вывел мины
                 pole[3, 4 - 3] = mina;
-
                 
             }
-
-
-
+            else if (i1 != i && j1 != j )
+            {
+                pole[i, j] = '@';
+            }
         }
 
     }
+
+
 }
 
 
